@@ -9,6 +9,7 @@ using Library.API.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using Library.API.Entities;
+using Microsoft.AspNetCore.Http;
 
 namespace Library.API.Controllers
 {
@@ -16,22 +17,24 @@ namespace Library.API.Controllers
     public class AuthorsController : Controller
     {
         private ILibraryRepository _libraryRepository;
+
+
         public AuthorsController(ILibraryRepository libraryRepository)
         {
             _libraryRepository = libraryRepository;
         }
 
         [HttpGet()]
-        public IActionResult GetAuthors()
+        public IActionResult GetAuthors(AuthorsResourceParameters authorsResourceParameters)
         {
-            var authorsFromRepo = _libraryRepository.GetAuthors();
+            var authorsFromRepo = _libraryRepository.GetAuthors(authorsResourceParameters);
 
             var authors = Mapper.Map<IEnumerable<AuthorDto>>(authorsFromRepo);
             // dont need 404 if empty, because it exists, it's just empty.
             return Ok(authors);
         }
 
-        [HttpGet("{id}", Name ="GetAuthor")]
+        [HttpGet("{id}", Name = "GetAuthor")]
         public IActionResult GetAuthor(Guid id)
         {
             var authorFromRepo = _libraryRepository.GetAuthor(id);
@@ -79,5 +82,39 @@ namespace Library.API.Controllers
             // return 201 created response with Method name, anonymous object containing the Id, and the author to return object. 
             return CreatedAtRoute("GetAuthor", new { id = authorToReturn.Id }, authorToReturn);
         }
+
+        [HttpPost("{id}")]
+        public IActionResult BlockAuthorCreation(Guid id)
+        {
+            if (_libraryRepository.AuthorExists(id))
+            {
+                return new StatusCodeResult(StatusCodes.Status409Conflict);
+            }
+
+            return NotFound();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAuthor(Guid id)
+        {
+            var authorFromRepo = _libraryRepository.GetAuthor(id);
+            if (authorFromRepo == null)
+            {
+                return NotFound();
+            }
+
+            _libraryRepository.DeleteAuthor(authorFromRepo);
+            // cascade when delete is on by default
+
+            if (!_libraryRepository.Save())
+            {
+                throw new Exception($"An error occured while deleting author with id {id}");
+            }
+
+            return NoContent();
+
+        }
+        
+
     }
 }

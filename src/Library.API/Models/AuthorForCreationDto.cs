@@ -12,5 +12,9 @@ namespace Library.API.Models
         public DateTimeOffset DateOfBirth { get; set; }
         public string Genre { get; set; }
 
+        // add this ICollection if you want to create an author and books simultaneously
+        public ICollection<BookForCreationDto> Books { get; set; }
+        = new List<BookForCreationDto>();
+
     }
 }
