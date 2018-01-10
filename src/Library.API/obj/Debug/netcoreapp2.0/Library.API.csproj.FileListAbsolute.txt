@@ -9,3 +9,14 @@ C:\Users\hartlemi\source\repos\csproj_msbuild_core2\start-end\Library\src\Librar
 C:\Users\hartlemi\source\repos\csproj_msbuild_core2\start-end\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.AssemblyInfo.cs
 C:\Users\hartlemi\source\repos\csproj_msbuild_core2\start-end\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.dll
 C:\Users\hartlemi\source\repos\csproj_msbuild_core2\start-end\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.pdb
+C:\Users\Michael\Projects\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.deps.json
+C:\Users\Michael\Projects\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.runtimeconfig.json
+C:\Users\Michael\Projects\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.runtimeconfig.dev.json
+C:\Users\Michael\Projects\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.dll
+C:\Users\Michael\Projects\Library\src\Library.API\bin\Debug\netcoreapp2.0\Library.API.pdb
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.csproj.CoreCompileInputs.cache
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.AssemblyInfoInputs.cache
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.AssemblyInfo.cs
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.dll
+C:\Users\Michael\Projects\Library\src\Library.API\obj\Debug\netcoreapp2.0\Library.API.pdb

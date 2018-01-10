@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 
 namespace Library.API.Helpers
 {
+    /// <summary>
+    /// This helper class is used to help get previous/next page information for metadata.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class PagedList<T> : List<T>
     {
         public int CurrentPage { get; private set; }

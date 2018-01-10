@@ -12573,7 +12573,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hartlemi\\.nuget\\packages\\": {},
+    "C:\\Users\\Michael\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -12583,18 +12583,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\hartlemi\\source\\repos\\csproj_msbuild_core2\\start-end\\Library\\src\\Library.API\\Library.API.csproj",
+      "projectUniqueName": "C:\\Users\\Michael\\Projects\\Library\\src\\Library.API\\Library.API.csproj",
       "projectName": "Library.API",
-      "projectPath": "C:\\Users\\hartlemi\\source\\repos\\csproj_msbuild_core2\\start-end\\Library\\src\\Library.API\\Library.API.csproj",
-      "packagesPath": "C:\\Users\\hartlemi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hartlemi\\source\\repos\\csproj_msbuild_core2\\start-end\\Library\\src\\Library.API\\obj\\",
+      "projectPath": "C:\\Users\\Michael\\Projects\\Library\\src\\Library.API\\Library.API.csproj",
+      "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Michael\\Projects\\Library\\src\\Library.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\hartlemi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
